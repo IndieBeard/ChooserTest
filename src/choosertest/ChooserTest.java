@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class ChooserTest {
     
-    private static final ArrayList<Coin> coinList = new ArrayList<>();
+    private static final ArrayList<Coin> COIN_LIST = new ArrayList<>();
     private static Chooser chooser;
 
     /**
@@ -21,7 +21,7 @@ public class ChooserTest {
      */
     public static void main(String[] args) {
         addCoin();
-        chooser = new Chooser(coinList);
+        chooser = new Chooser(COIN_LIST);
         
         for(int i = 0; i <= 10; i++){
             System.out.println(chooser.choose().toString());
@@ -29,12 +29,12 @@ public class ChooserTest {
     }
     
     private static void addCoin(){
-        coinList.add(new Coin("penny", 0.01));
-        coinList.add(new Coin("nickel", 0.05));
-        coinList.add(new Coin("dime", 0.10));
-        coinList.add(new Coin("quarter", 0.25));
-        coinList.add(new Coin("halfDollar", 0.50));
-        coinList.add(new Coin("dollar", 1.00));
+        COIN_LIST.add(new Coin("penny", 0.01));
+        COIN_LIST.add(new Coin("nickel", 0.05));
+        COIN_LIST.add(new Coin("dime", 0.10));
+        COIN_LIST.add(new Coin("quarter", 0.25));
+        COIN_LIST.add(new Coin("halfDollar", 0.50));
+        COIN_LIST.add(new Coin("dollar", 1.00));
 
     }
     
