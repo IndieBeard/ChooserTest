@@ -21,7 +21,7 @@ public class ChooserTest {
      */
     public static void main(String[] args) {
         addCoin();
-        chooser = new Chooser(COIN_LIST);
+        chooser = new Chooser<>(COIN_LIST);
         
         for(int i = 0; i <= 10; i++){
             System.out.println(chooser.choose().toString());
